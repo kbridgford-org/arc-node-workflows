@@ -1,4 +1,4 @@
-name: Build, Test, Build Docker, and Deploy to Azure Web App in Container Mode
+name: Deploy App
 
 on:
   workflow_dispatch:
