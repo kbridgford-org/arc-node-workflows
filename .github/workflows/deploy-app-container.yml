@@ -75,15 +75,10 @@ jobs:
         # Paste output of `az ad sp create-for-rbac` as value of secret variable: AZURE_CREDENTIALS
         creds: ${{ secrets.AZURE_CREDENTIALS }}
               
-    - name: Deploy to Azure Web App
-      uses: azure/webapps-deploy@v3
-      with:
-        app-name: ${{ env.AZURE_WEBAPP_NAME }}
-        
     - name: Set Registry Auth
       uses: Azure/appservice-settings@v1
       with:
-       app-name: nodeapp-container
+       app-name: ${{ env.AZURE_WEBAPP_NAME }}
        app-settings-json: |
          [
              {
