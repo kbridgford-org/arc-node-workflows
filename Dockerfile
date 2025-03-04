@@ -15,4 +15,4 @@ ENV PORT=8000
 EXPOSE 8000 2222
 
 # Define the command to run the app
-CMD [ "npm", "start" ]
+ENTRYPOINT [ "npm", "start" ]
