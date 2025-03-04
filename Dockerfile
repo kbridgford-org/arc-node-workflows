@@ -11,7 +11,8 @@ COPY package*.json index.js thumbsUp.jpeg ./
 RUN npm install
 
 # Expose the port the app runs on
-EXPOSE 3000
+ENV PORT 8080
+EXPOSE 8080
 
 # Define the command to run the app
 CMD [ "npm", "start" ]
