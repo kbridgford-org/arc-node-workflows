@@ -30,4 +30,4 @@ jobs:
       with:
         app-name: arc-node-app-container
         images: arc-node-workflows:latest
-        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE_NODEAPP_CONTAINER }}
