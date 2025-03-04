@@ -1,4 +1,4 @@
-name: Build, Test, and Deploy to Azure Web App
+name: Deploy Container App
 
 on:
   workflow_dispatch:
